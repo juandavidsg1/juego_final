@@ -1,0 +1,19 @@
+Interacción entre los Elementos:
+Inicio del Juego:
+
+Cuando el jugador inicia el juego, se muestra el menú y elige comenzar.
+Se selecciona una palabra secreta aleatoria y se configura el número de intentos.
+Adivinación:
+
+El jugador ingresa una letra.
+La letra se verifica contra la palabra secreta:
+Si la letra está en la palabra, se revela en la palabra oculta.
+Si no está, se resta un intento y se actualiza la figura del ahorcado.
+Verificación del Estado:
+
+Después de cada adivinanza, el juego verifica si el jugador ha adivinado toda la palabra o si se han agotado los intentos.
+Si el jugador adivina la palabra correctamente, el juego muestra un mensaje de victoria.
+Si el jugador pierde, se muestra la palabra secreta y un mensaje de derrota.
+Fin del Juego:
+
+El juego termina cuando el jugador adivina la palabra o se queda sin intentos.

@@ -1,0 +1,19 @@
+Instrucciones del Juego: El Ahorcado
+Objetivo del Juego:
+El objetivo del juego es adivinar una palabra secreta, letra por letra, antes de que se acaben los intentos. Cada vez que una letra incorrecta es adivinada, una parte de una figura de ahorcado se dibuja. El jugador tiene un número limitado de intentos para adivinar la palabra.
+
+Reglas del Juego:
+El jugador debe adivinar la palabra secreta, que está oculta por guiones bajos (_).
+El jugador puede adivinar una letra a la vez.
+Cada vez que se adivina una letra, si está en la palabra, se revela en su posición correspondiente.
+Si la letra no está en la palabra, se cuenta como un intento fallido.
+El jugador tiene un número limitado de intentos para adivinar la palabra. Si se acaban los intentos, el juego termina y el jugador pierde.
+El juego muestra cuántas letras correctas han sido adivinadas y cuántos intentos le quedan.
+El jugador gana si adivina todas las letras antes de que se acaben los intentos.
+Si el jugador pierde, el juego muestra la palabra secreta y termina.
+Mecánica del Juego:
+El juego elige una palabra secreta de una lista predefinida.
+El jugador ingresa letras y se le indica si la letra está o no en la palabra secreta.
+El juego muestra las letras adivinadas correctamente y las letras restantes por adivinar.
+Si el jugador adivina la palabra antes de que se acaben los intentos, gana.
+Si se quedan sin intentos, el jugador pierde y la palabra secreta es revelada.

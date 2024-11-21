@@ -1,0 +1,50 @@
+Arquitectura del Juego: El Ahorcado
+
+Estructura del Juego
+El juego está implementado en C++ con una estructura básica que incluye funciones para manejar las interacciones con el jugador, verificar las letras adivinadas, y gestionar el progreso del juego. La estructura de clases y métodos está diseñada para mantener el código modular y fácil de mantener.
+
+Clases y Métodos del Juego
+1. Clase Juego
+La clase Juego gestiona toda la lógica del juego, incluyendo la elección de la palabra secreta, el seguimiento de los intentos, y la verificación del estado del juego (si el jugador ha ganado o perdido).
+
+Atributos:
+
+palabra: la palabra secreta que el jugador debe adivinar.
+palabra_oculta: una versión de la palabra con guiones bajos que se va actualizando conforme se adivinan letras correctas.
+intentos: número de intentos disponibles para adivinar.
+letras_adivinadas: un conjunto de letras que el jugador ya ha adivinado.
+estado: indica el estado del juego (si está en progreso, si el jugador ha ganado o ha perdido).
+Métodos:
+
+iniciarJuego(): Inicializa el juego, elige la palabra secreta y configura los intentos iniciales.
+mostrarPalabra(): Muestra la palabra oculta con guiones bajos y las letras adivinadas.
+adivinarLetra(char letra): Recibe una letra y actualiza el progreso del jugador. Verifica si la letra está en la palabra secreta.
+mostrarIntentosRestantes(): Muestra el número de intentos restantes.
+verificarEstado(): Verifica si el jugador ha ganado o perdido, y termina el juego si es necesario.
+2. Clase Palabra
+La clase Palabra gestiona la palabra secreta y sus manipulaciones.
+
+Atributos:
+
+palabra_secreta: la palabra secreta a adivinar.
+letras_descubiertas: un vector que guarda las letras descubiertas hasta el momento.
+Métodos:
+
+generarPalabra(): Elige aleatoriamente una palabra secreta desde una lista predefinida.
+actualizarPalabra(char letra): Actualiza la palabra oculta cuando una letra correcta es adivinada.
+esCorrecta(char letra): Verifica si una letra está presente en la palabra secreta.
+3. Clase Jugador
+La clase Jugador maneja la interacción del jugador con el juego, como ingresar letras y mostrar el estado del juego.
+
+Atributos:
+
+nombre: el nombre del jugador.
+intentos: número de intentos que le quedan al jugador.
+letras_adivinadas: un conjunto de letras adivinadas por el jugador.
+Métodos:
+
+adivinacion(): Solicita al jugador que ingrese una letra para adivinar.
+verificarLetra(char letra): Verifica si la letra ya fue adivinada anteriormente.
+4. Funciones Auxiliares
+mostrarFiguraAhorcado(int intentos): Dibuja el cuerpo del ahorcado en función de los intentos fallidos.
+mostrarMenu(): Muestra el menú inicial con la opción de comenzar un nuevo juego o salir.

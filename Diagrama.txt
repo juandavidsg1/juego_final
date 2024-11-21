@@ -1,0 +1,9 @@
+Diagrama de Flujo Básico:
+
+El jugador inicia el juego.
+Se genera una palabra secreta.
+El jugador adivina una letra.
+El sistema verifica si la letra está en la palabra.
+Se actualiza la palabra oculta y se verifica el estado del juego.
+Si el jugador ha ganado o perdido, el juego termina.
+El jugador puede elegir continuar o salir
